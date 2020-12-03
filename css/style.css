@@ -9,10 +9,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+li {
+  list-style: none;
+}
+
 .container {
   height: 100vh;
   width: 100%;
-  background-color: lightgrey;
 }
 
 /* Main */
@@ -25,26 +33,128 @@ main {
   height: 100%;
   width: 250px;
   background-color: #000000;
+  color: #6b6b6b;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header-nav-logo {
-  height: 100px;
-  width: 100%;
+.main-nav span {
+  color: #6b6b6b;
 }
 
-.main-music {
-  height: 100%;
-  width: calc(100% - 250px);
-  background-color: #141922;
-  padding-top: 100px;
+.nav-home-logo {
+  flex-grow: 1;
+  max-height: 260px;
+  min-height: 260px;
 }
 
-.header-main-cta {
+.logo-spotify {
+  padding: 25px 0px;
+  padding-left: 24px;
+}
+
+.logo-spotify img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-home img {
+  height: 24px;
+}
+
+.nav-home a {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.nav-home span {
+  margin-left: 10px;
+}
+
+.active-home {
+  border-left: 3px solid #adff2f;
+  padding-left: 21px;
+}
+
+.search {
+  padding-left: 24px;
+}
+
+.libreria {
+  padding-left: 24px;
+}
+
+.playlist-home {
+  padding-top: 20px;
+  padding-left: 24px;
+}
+
+.playlist-home h5 {
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.playlist-home a i {
+  font-size: 40px;
+  color: white;
+}
+
+.playlist-home a {
+  display: flex;
+  align-items: center;
+}
+
+.playlist-home span {
+  margin-left: 10px;
+}
+
+.nav-playlist {
+  flex-grow: 2;
+  overflow-y: auto;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.nav-playlist ul li {
+  padding: 10px 0px;
+}
+
+.nav-account {
+  padding: 0px 24px;
+}
+
+.nav-account a{
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+
+.nav-account span {
+  margin-left: 10px;
+}
+
+.nav-account i {
+  font-size: 24px;
+}
+
+.nav-account h4{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Sezione centrale */
+/* Header centrale  */
+.header-center-cta {
   height: 100px;
   width: calc(100% - 250px);
   line-height: 100px;
   text-align: right;
   position: fixed;
+  z-index: 1;
   top: 0px;
   right: 0px;
   background-color: rgba(8, 11, 18, 0.50);
@@ -57,7 +167,64 @@ main {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+}
+/* Fine header centrale */
 
+/* Inizio main centrale */
+.center {
+  height: 100%;
+  width: calc(100% - 250px);
+  background-color: #141922;
+  padding-top: 100px;
+  overflow-y: scroll;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-main-centrale {
+  text-align: center;
+}
+
+.nav-main-centrale ul li {
+  display: inline;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 60px;
+  padding-bottom: 5px;
+}
+
+.row-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-title {
+  width: 100%;
+  height: 50px;
+}
+
+.box-music-first{
+  padding-left: 0px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.box-music {
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.box-music img,
+.box-music-first img {
+  width: 220px;
+  height: auto;
+}
+
+.seconda-riga,
+.terza-riga {
+  padding-top: 20px;
 }
 
 /* Footer */
@@ -84,8 +251,7 @@ footer {
 }
 
 /* Box */
-.box-header {
+.box1 {
   height: 100px;
   width: 100%;
-  background-color: yellow;
 }
