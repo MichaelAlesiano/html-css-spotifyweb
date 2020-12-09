@@ -589,9 +589,6 @@ footer {
 }
 
 /* + VIEW CONTROL */
-.view_control_xs {
-  display: none;
-}
 
 .view_control {
   width: 15%;
@@ -602,13 +599,12 @@ footer {
   margin-right: 20px;
 }
 
-.view_control a,
-.view_control_xs a {
+.view_control a, {
   margin-right: 10px;
 }
 
 .view_control .track_bar,
-.view_control_xs .track_bar {
+.track_bar {
   width: 50%;
   height: 4px;
   display: flex;
@@ -618,12 +614,12 @@ footer {
 }
 
 .view_control .track_bar:hover .white_bar,
-.view_control_xs .track_bar:hover .white_bar {
+.track_bar:hover .white_bar {
   background-color: #1db954;
 }
 
 .view_control .track_bar:hover .white_bar::after,
-.view_control_xs .track_bar:hover .white_bar::after {
+.track_bar:hover .white_bar::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -633,13 +629,6 @@ footer {
   top: 2px;
   right: 0;
   transform: translate(50%, -50%);
-}
-
-/* - RESPONSIVE HEIGHT 350PX */
-@media screen and (max-height: 350px) {
-  .main_nav_xs .lower_nav_icons {
-    display: none;
-  }
 }
 
 /* - RESPONSIVE 970PX */
@@ -742,30 +731,6 @@ footer {
     display: none;
   }
 
-  .track_name_xs {
-    width: 50%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .track_name_xs .track_info {
-    margin-left: 5px;
-  }
-
-  .track_name_xs .track_info h6 {
-    font-size: 0.7em;
-    margin-right: 5px;
-  }
-
-  .track_name_xs .track_info p {
-    font-size: 0.6em;
-  }
-
-  .track_name_xs .track_icons {
-    margin-left: 0;
-  }
 
   /* Main Control */
   .main_control {
@@ -776,41 +741,6 @@ footer {
 
   .main_control .track_bar {
     margin: 0 20px;
-  }
-
-  /* View Control */
-  .view_control {
-    display: none;
-  }
-
-  .view_control_xs {
-    width: 50%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #b001c7d3;
-  }
-}
-
-/* - RESPONSIVE 500PX */
-@media screen and (max-width: 500px) {
-  .playlist_box {
-    width: calc(100% / 2 - 20px);
-  }
-
-  /* Track Name */
-  .track_name_xs {
-    width: 100%;
-  }
-
-  .track_name_xs .track_info h6 {
-    font-size: 0.9em;
-    margin-right: 5px;
-  }
-
-  .track_name_xs .track_info p {
-    font-size: 0.8em;
   }
 
   /* View Control */
