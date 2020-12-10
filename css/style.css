@@ -78,7 +78,6 @@ a {
   margin-bottom: 5px;
 }
 
-
 /* Main */
 main {
   display: flex;
@@ -113,6 +112,17 @@ main {
 
 .logo-spotify img {
   width: 150px;
+  height: auto;
+}
+
+.logo-mobile {
+  display: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.logo-mobile img{
+  width: 70%;
   height: auto;
 }
 
@@ -202,6 +212,59 @@ main {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  main .main-nav {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  main .logo-mobile img {
+    height: auto;
+    width: 30px;
+    padding-left: 4px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .logo-spotify {
+    display: none;
+  }
+  main .logo-mobile {
+    display: block;
+  }
+
+  main span {
+    display: none;
+  }
+
+  main .main-nav .sotto{
+    height: auto;
+    width: 30px;
+    text-align: center;
+  }
+
+  main .playlist-home{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .nav-account hr{
+    display: none;
+  }
+
+  main .nav-account h4{
+    display: none;
+  }
+
+  main .nav-account {
+    padding-bottom: 30px;
+  }
+}
+
+
 /* Sezione centrale */
 /* Header centrale  */
 .header-center-cta {
@@ -215,6 +278,13 @@ main {
   right: 0px;
   background-color: rgba(8, 11, 18, 0.50);
 }
+
+@media screen and (max-width: 600px) {
+  .header-center-cta {
+    width: calc(100% - 70px);
+  }
+}
+
 
 .btn_cta {
   padding: 14px 28px;
